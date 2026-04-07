@@ -1,0 +1,16 @@
+Bonfyre is a platform of 46 static C binaries that handle the complete lifecycle
+of content processing: from audio transcription to semantic search, from content
+management to billing. Each binary is self-contained, typically under 100 KB,
+and communicates through files and SQLite databases.
+
+This document demonstrates the embedding and vector search capabilities. The text
+you're reading right now will be converted into a 384-dimensional vector and stored
+in a local SQLite database — no cloud API required.
+
+Key capabilities:
+- Audio transcription (local Whisper, no cloud)
+- Semantic embeddings (ONNX Runtime, 237 ms per document)
+- Vector search (sqlite-vec, 5 ms queries)
+- Content management (299 KB CMS binary)
+- Lambda Tensors compression (13.5% of raw JSON with random access)
+- Full SaaS backend (auth, billing, API gateway — 240 KB total)
