@@ -73,6 +73,17 @@ You built a complete backend platform and ran three different subsystems:
 
 All from static C binaries. No containers. No API keys. No recurring costs.
 
+## What's under the hood
+
+| Capability | Detail |
+|---|---|
+| Transcription engine | **HCP v3.2** — 0.997 quality (tiny q5_0, 29 MB model) |
+| Hallucination detection | **9 layers** — spectral, Kalman, E-T gate, formant, bigram, trigram, morphological logit bias, repetition, re-decode |
+| Pipeline latency | **< 8 ms** per stage (6 stages = ~48 ms total) |
+| JSON compression | **9.3%** ratio with O(1) field reads (Lambda Tensors) |
+| OpenAI compatibility | Drop-in via `bonfyre-proxy serve --port 8787` (supports `/v1/audio/transcriptions`, `/v1/chat/completions`, `/v1/models`) |
+| Tests | **167 passing** |
+
 ## Next steps
 
 | Want to... | Example repo |
@@ -81,6 +92,9 @@ All from static C binaries. No containers. No API keys. No recurring costs.
 | Transcribe audio locally | [bonfyre-example-transcribe](https://github.com/Nickgonzales76017/bonfyre-example-transcribe) |
 | Compress JSON payloads (13.5%) | [bonfyre-example-compress](https://github.com/Nickgonzales76017/bonfyre-example-compress) |
 | Run a full SaaS backend | [bonfyre-example-saas-stack](https://github.com/Nickgonzales76017/bonfyre-example-saas-stack) |
+| Use OpenAI-compatible API | `bonfyre-proxy` — [main repo](https://github.com/Nickgonzales76017/bonfyre) |
+| Fork a ready-made pipeline | [bonfyre-creator-starter](https://github.com/Nickgonzales76017/bonfyre-creator-starter) |
+| Browse pipeline recipes | [bonfyre-recipes](https://github.com/Nickgonzales76017/bonfyre-recipes) |
 | See all 48 binaries | [bonfyre (main repo)](https://github.com/Nickgonzales76017/bonfyre) |
 
 ## File structure
