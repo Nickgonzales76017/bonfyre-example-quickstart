@@ -1,11 +1,11 @@
 # bonfyre-example-quickstart
 
-**30 seconds from clone to running.** Build 46 C binaries, launch a CMS, embed a document, search it.
+**30 seconds from clone to running.** Build 48 C binaries, launch a CMS, embed a document, search it.
 
 | | Bonfyre | Typical stack |
 |---|---|---|
 | Install | `git clone && make` | Node.js + Python + Docker + 400 npm packages |
-| Total size | **2.0 MB** (46 binaries) | 500 MB+ |
+| Total size | **2.0 MB** (48 binaries) | 500 MB+ |
 | Startup | **< 50 ms** | 30–120 seconds |
 | Dependencies | C compiler + SQLite | Node.js, Python, Docker, Redis, Postgres |
 | Monthly cost | **$0** | $50–500/mo (cloud APIs) |
@@ -81,7 +81,7 @@ All from static C binaries. No containers. No API keys. No recurring costs.
 | Transcribe audio locally | [bonfyre-example-transcribe](https://github.com/Nickgonzales76017/bonfyre-example-transcribe) |
 | Compress JSON payloads (13.5%) | [bonfyre-example-compress](https://github.com/Nickgonzales76017/bonfyre-example-compress) |
 | Run a full SaaS backend | [bonfyre-example-saas-stack](https://github.com/Nickgonzales76017/bonfyre-example-saas-stack) |
-| See all 46 binaries | [bonfyre (main repo)](https://github.com/Nickgonzales76017/bonfyre) |
+| See all 48 binaries | [bonfyre (main repo)](https://github.com/Nickgonzales76017/bonfyre) |
 
 ## File structure
 
